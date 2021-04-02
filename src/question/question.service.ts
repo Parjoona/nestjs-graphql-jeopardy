@@ -11,11 +11,4 @@ export class QuestionService {
 
     return question.data['question'];
   }
-
-  async getAllCategories() {
-    const categories = await axios.get(
-      'https://jeopardy-api.bentleyherron.dev/api/categories',
-    );
-    return categories.data['category_names'];
-  }
 }
